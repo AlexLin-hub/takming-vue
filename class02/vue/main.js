@@ -37,6 +37,7 @@ var app = new Vue({
       this.time = TIME_FORMAT;
       this.date = DATE_FORMAT;
     },
+
     start() {
       this.timer = setInterval(() => {
         this.getNowTime();
