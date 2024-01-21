@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v-model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div style="position: relative">
+        <div class="content">
+          <input type="text" placeholder="請輸入待辦事項" />
+          <button>新增待辦事項</button>
+        </div>
+
+        <div id="list">
+          <p id="title">待辦事項清單</p>
+          <label id="empty">目前尚無待辦事項</label>
+          <ul id="list-items"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
