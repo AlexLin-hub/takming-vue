@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v-model</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="content">
+        <input
+          v-model="password"
+          type="password"
+          placeholder="請輸入密碼"
+          v-on:keydown.enter="submit"
+        />
+        <button v-on:click="submit">確認密碼</button>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
