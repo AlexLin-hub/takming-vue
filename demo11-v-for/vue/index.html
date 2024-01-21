@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v-model</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div style="position: relative">
+        <div class="content">
+          <input
+            v-model="content"
+            type="text"
+            placeholder="請輸入待辦事項"
+            v-on:keydown.enter="submit"
+          />
+          <button v-on:click="submit">新增待辦事項</button>
+        </div>
+
+        <div id="list">
+          <p id="title">待辦事項清單</p>
+          <label id="empty" v-if="isEmpty">目前尚無待辦事項</label>
+          <ul v-else id="list-items">
+            <li v-for="(item,index) in items" :key="index">{{ item }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
