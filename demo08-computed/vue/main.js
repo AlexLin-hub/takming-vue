@@ -14,4 +14,10 @@ var app = new Vue({
       confirm("確定要送出嗎？");
     },
   },
+
+  computed: {
+    isDisabled() {
+      return this.password.length < 6;
+    },
+  },
 });
