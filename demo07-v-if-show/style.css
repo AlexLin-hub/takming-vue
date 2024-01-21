@@ -1,0 +1,67 @@
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+input:focus {
+  outline: none;
+  border-color: #111;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content > button {
+  font-size: 12px;
+  color: #eee;
+  background: #222;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#state {
+  display: none;
+  font-size: 12px;
+  color: #222;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+}
+
+#state::before {
+  content: " ";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #222;
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
