@@ -42,7 +42,6 @@ input:focus {
 }
 
 #state {
-  display: none;
   font-size: 12px;
   color: #222;
   position: fixed;
