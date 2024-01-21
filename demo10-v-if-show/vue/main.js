@@ -9,8 +9,6 @@ var app = new Vue({
   methods: {
     submit() {
       if (this.isLogin) {
-        const button = document.querySelector("button");
-        button.style.backgroundColor = "#222";
         this.isLogin = false;
         alert("已登出系統");
         return;
@@ -24,9 +22,6 @@ var app = new Vue({
 
       this.password = "";
       this.isLogin = true;
-
-      const button = document.querySelector("button");
-      button.style.backgroundColor = "#ff5500";
     },
   },
 });

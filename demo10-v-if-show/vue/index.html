@@ -17,7 +17,10 @@
           v-on:keydown.enter="submit"
           v-bind:disabled="isLogin"
         />
-        <button v-on:click="submit">
+        <button
+          v-on:click="submit"
+          v-bind:style="{'backgroundColor': isLogin ? '#ff5500' : '#222'}"
+        >
           {{ isLogin? "登出系統" : "登入系統" }}
         </button>
       </div>
