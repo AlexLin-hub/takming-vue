@@ -24,9 +24,9 @@ var app = new Vue({
         },
       })
         .then((res) => res.json())
-        .then((res) => {
-          console.log(res);
-          alert(res.returnMessage);
+        .then((data) => {
+          console.log(data);
+          alert(data.returnMessage);
         })
         .catch((err) => {
           console.log(err);
