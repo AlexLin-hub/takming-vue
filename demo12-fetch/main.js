@@ -18,7 +18,7 @@ var app = new Vue({
         method: "POST",
         body: JSON.stringify(this.request),
         headers: {
-          "Content-type": "application/json; charset=UTF-8",
+          "Content-type": "application/json;",
           SID: "",
           CID: "",
         },
